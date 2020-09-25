@@ -1,16 +1,16 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
+#include<mpfr.h>
+#include<gmp.h>
 
 #ifndef _PI_CALC_H
 #define _PI_CALC_H
 
 #endif
 
-unsigned long int fact(int n);
+void pi_lei_calc(mpfr_t pi,unsigned long int lim);
 
-long double pi_lei_calc(int lim);
+//void pi_euler_clac(mpfr_t pi,unsigned long int lim);
 
-long double pi_euler_clac(int lim);
-
-long double pi_raman_calc(int lim);
+//void pi_raman_calc(mpfr_t pi,unsigned long int lim);
