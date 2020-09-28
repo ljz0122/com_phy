@@ -1,8 +1,10 @@
 #VS Code
 .vscode/
+1_Pi/.vscode/
 
 #Binary File
-.out
-.o
-.so
-.a 
+*.out
+*.o
+*.so
+*.a 
+*.json
