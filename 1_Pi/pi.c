@@ -1,35 +1,34 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
+#include<mpfr.h>
 
 #include"pi_calc.h"
 
 int main(int argc,char *argv[]){
-    //long double pi;
+    long double pi_ld;
     int N = atoi(argv[2]);
     int method = atoi(argv[1]);
     char * str_pi;
-    /*switch (method)
-    {
+    mpfr_t pi;
+    switch (method){
     case 1 :
-        pi = pi_lei_calc(N);
+        pi_ld = pi_lei_calc(pi_ld,N);
+        mpfr_init_set_ld(pi,pi_ld,MPFR_RNDN);
         break;
     case 2 :
-        pi = pi_euler_clac(N);
+        pi_ld = pi_euler_calc(pi_ld,N);
+        mpfr_init_set_ld(pi,pi_ld,MPFR_RNDN);
         break;
-    case 3 :
+    /*case 3 :
         pi = pi_raman_calc(N);
-        break;
+        break;*/
     default:
         printf("Unrecognized Argument\n");
-    }*/
-    //printf("Pi=%s \n",gcvt(pi,N+1,&str_pi));
-    //mpfr_prec_t p=MPFR_PREC_MAX;
-    //mpfr_printf("prec is %Pu\n",p);
-    mpfr_t pi;
-    mpfr_init(pi);
-    pi_lei_calc(pi,N);
-    mpfr_printf("Pi=%.100Rf\n",pi);
+    }
+    printf("Pi=");
+    mpfr_out_str(stdout,10,N+1,pi,MPFR_RNDN);
+    printf("\n");
     mpfr_clear(pi);
     return 0;
 }

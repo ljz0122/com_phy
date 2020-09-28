@@ -9,8 +9,8 @@
 
 #endif
 
-void pi_lei_calc(mpfr_t pi,unsigned long int lim);
+long double pi_lei_calc(long double pi,int lim);
 
-//void pi_euler_clac(mpfr_t pi,unsigned long int lim);
+long double pi_euler_calc(long double pi,int lim);
 
 //void pi_raman_calc(mpfr_t pi,unsigned long int lim);
