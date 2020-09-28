@@ -9,7 +9,6 @@ int main(int argc,char *argv[]){
     long double pi_ld;
     int N = atoi(argv[2]);
     int method = atoi(argv[1]);
-    char * str_pi;
     mpfr_t pi;
     mpfr_init2(pi,(4*N+256));
     switch (method){
@@ -27,7 +26,7 @@ int main(int argc,char *argv[]){
     default:
         printf("Unrecognized Argument\n");
     }
-    printf("Pi=");
+    printf("\nPi=");
     mpfr_out_str(stdout,10,N+1,pi,MPFR_RNDN);
     printf("\n");
     mpfr_clear(pi);

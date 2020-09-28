@@ -7,5 +7,14 @@
 *.so
 *.a 
 
+#Cmake Files
+build/
+cmake-build-debug/
+cmake-build-release/
+
 #Config File
 *.json
+
+#Compile Files
+bin/
+libs/
