@@ -7,4 +7,6 @@
 *.o
 *.so
 *.a 
+
+#Config File
 *.json

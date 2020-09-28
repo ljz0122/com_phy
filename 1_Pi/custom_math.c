@@ -12,7 +12,7 @@ void fact(mpz_t result,const int num){          //此处定义一求阶乘函数
     }
 }
 
-void mpz_pow(mpz_t result,const mpz_t base,const mpz_t exp){
+/*void mpz_pow(mpz_t result,const mpz_t base,const mpz_t exp){
     mpz_t i;
     mpz_set_si(result,1);
     if(mpz_cmp_si(exp,0)>0){
@@ -36,7 +36,7 @@ void mpz_si_pow(mpz_t result,const long int base,const mpz_t exp){
     else{
         mpz_set_si(result,1);
     }
-}
+}*/
 
 /*int main(int argc,char *argv[]){
     mpz_t base,exp,result;

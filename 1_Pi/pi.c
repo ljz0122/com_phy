@@ -11,6 +11,7 @@ int main(int argc,char *argv[]){
     int method = atoi(argv[1]);
     char * str_pi;
     mpfr_t pi;
+    mpfr_init2(pi,(4*N+256));
     switch (method){
     case 1 :
         pi_ld = pi_lei_calc(pi_ld,N);
@@ -20,9 +21,9 @@ int main(int argc,char *argv[]){
         pi_ld = pi_euler_calc(pi_ld,N);
         mpfr_init_set_ld(pi,pi_ld,MPFR_RNDN);
         break;
-    /*case 3 :
-        pi = pi_raman_calc(N);
-        break;*/
+    case 3 :
+        pi_raman_calc(pi,N);
+        break;
     default:
         printf("Unrecognized Argument\n");
     }
