@@ -1,6 +1,9 @@
 #VS Code
 .vscode/
 
+#Jetbrains Setting Files
+.idea/
+
 #Binary File
 *.out
 *.o
@@ -19,4 +22,7 @@ cmake-build-release/
 bin/
 libs/
 
+*.ipynb
+
+#Expection
 !4_Pi/Pi_calc.so
