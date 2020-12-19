@@ -22,6 +22,8 @@ cmake-build-release/
 bin/
 libs/
 
+#Jupyter Notebook File
+.ipynb_checkpoints/
 *.ipynb
 
 #Expection
