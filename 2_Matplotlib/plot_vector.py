@@ -15,4 +15,5 @@ w = np.cos(np.pi * z)
 
 ax.quiver3D(X, Y, Z, u, v, w, length=0.2, normalize=True)
 
+fig.savefig('plot_vector.png')
 plt.show()

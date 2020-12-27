@@ -38,4 +38,5 @@ bx.set_zlabel(r'$X^2+Y^2$')
 surfb = bx.plot_surface(X, Y, bzline, cmap='hot')
 bx.view_init(60, 35)
 
+fig.savefig('plot_xy.png')
 plt.show()

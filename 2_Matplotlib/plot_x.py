@@ -38,4 +38,5 @@ axs[1, 1].set_xlabel('x')
 axs[1, 1].set_ylabel(r'$|\psi_{20}(x)|^2$')
 axs[1, 1].set_title(r'$n=20$')
 
+fig.savefig('plot_x.png')
 plt.show()

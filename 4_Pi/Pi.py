@@ -49,4 +49,5 @@ plt.plot(n, pi_n, '*')
 plt.plot(x, pi_y, 'r')
 #plt.xscale('log')
 
+plt.savefig('Pi.png')
 plt.show()

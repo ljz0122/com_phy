@@ -20,4 +20,5 @@ for item_x in x:
 
 ax.scatter3D(X, Y, Z, c=colors, cmap='rainbow')
 
+fig.savefig('plot_xyz.png')
 plt.show()
