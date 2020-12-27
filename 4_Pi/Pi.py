@@ -25,7 +25,7 @@ pi_n = []
 for item in n:
     pi_n.append(pi_euler_n(item))
 
-#print(pi_n)
+# print(pi_n)
 
 
 def func(x, a, b, c):
@@ -38,16 +38,16 @@ a = popt[0]
 b = popt[1]
 c = popt[2]
 
-#print(a, b, c)
+# print(a, b, c)
 
 pi_y = func(n, a, b, c)
 
-#print(pi_y)
+# print(pi_y)
 print(func(10**8, a, b, c))
 
 plt.plot(n, pi_n, '*')
 plt.plot(x, pi_y, 'r')
-#plt.xscale('log')
+# plt.xscale('log')
 
 plt.savefig('Pi.png')
 plt.show()
