@@ -26,7 +26,13 @@ for z_item in z_less:
         B_item = cir.getB([x_item, 0, z_item])
         B_x = B_item[0]
         B_z = B_item[2]
-        B_2dplot.quiver(x_item, z_item, B_x, B_z, color='grey', width=0.005, pivot='mid')
+        B_2dplot.quiver(x_item,
+                        z_item,
+                        B_x,
+                        B_z,
+                        color='grey',
+                        width=0.005,
+                        pivot='mid')
 
 pos_2d = X, Z = np.meshgrid(x_more, z_more)
 for z_item in z_more:

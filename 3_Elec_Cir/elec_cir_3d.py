@@ -19,7 +19,7 @@ x_more = np.linspace(-10, 10, N_more)
 y_more = np.linspace(-10, 10, N_more)
 z_more = np.linspace(-10, 10, N_more)
 
-fig = plt.figure("3D Electric Circuit Magnet",figsize=(10,10))
+fig = plt.figure("3D Electric Circuit Magnet", figsize=(10, 10))
 
 B_3dplot = fig.add_subplot(1, 1, 1, projection='3d')
 pos_3d = X, Y, Z = np.meshgrid(x_more, y_more, z_more)
